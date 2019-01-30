@@ -23,6 +23,7 @@ public class N_11_MinNumberInRotatedArray {
         int left = 0;
         int right = arr.length - 1;
         int mid = left;
+        //条件也可以为： right - left >= 1
         while (arr[left] >= arr[right]) {
             if (right - left == 1) {
                 mid = right;
